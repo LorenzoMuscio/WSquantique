@@ -197,12 +197,12 @@ input {
 
 #h h1 {
   font-weight: 900;
-  color: #03C9A9;
+  color: skyblue;
   font-size: 90px;
 }
 
 #h h2 {
-  color: #1BA39C;
+  color: blue;
 }
 
 @media (max-width: 768px) {
