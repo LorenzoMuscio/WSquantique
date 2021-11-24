@@ -1,23 +1,39 @@
 var timeout;
+var timeoutQuantique;
 
 $("#piratage_start").click(function() {
     clearTimeout(timeout);
+    clearTimeout(timeoutQuantique);
     noQuantiqueBarWidth = 1;
     $("#no_quantique_span").hide();
-    setBarWidth("no_quantique", noQuantiqueBarWidth, 70);
-    quantiqueBarWidth = 1;
+    setBarWidth(noQuantiqueBarWidth);
     $("#quantique_span").hide();
-    setBarWidth("quantique", quantiqueBarWidth, 2000);
+    $("#quantique_bar").width("1%");
+    $("#quantique_bar").html("1sec  /  978 685 475 années");
+    timeQuantique(2);
 });
 
-function setBarWidth(name, value, time) {
-    $("#"+name+"_bar").width(value+"%");
+function setBarWidth(value) {
+    $("#no_quantique_bar").width(value+"%");
+    $("#no_quantique_bar").html(value+"sec  /  100sec");
     if (value != 100) {
         timeout = setTimeout(() => {
             value++;
-            setBarWidth(name, value, time);
-        }, time);
+            setBarWidth(value);
+        }, 1000);
     } else {
-        $("#"+name+"_span").show();
+        $("#no_quantique_span").show();
     }
 }
+
+function timeQuantique(value) {
+    timeoutQuantique = setTimeout(() => {
+        $("#quantique_bar").html(value+"sec  /  978 685 475 années");
+        value++;
+        timeQuantique(value);
+    }, 1000);
+}
+
+$(".glyphicon-chevron-down").click(function() {
+    $("html, body").stop().animate( { scrollTop: $("#container_presentation").offset().top }, 1300);
+});

@@ -183,7 +183,7 @@ input {
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 700px;
+  min-height: 725px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -197,12 +197,12 @@ input {
 
 #h h1 {
   font-weight: 900;
-  color: skyblue;
+  color: aliceblue;
   font-size: 90px;
 }
 
 #h h2 {
-  color: blue;
+  color: skyblue;
 }
 
 @media (max-width: 768px) {
