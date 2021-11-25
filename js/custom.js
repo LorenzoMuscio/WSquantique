@@ -46,10 +46,27 @@ $("#chevron_content").click(function() {
     $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
 });
 
+$("#chevron_content2").click(function() {
+    $("html, body").stop().animate( { scrollTop: $("#container_content2").offset().top }, 1300);
+});
+
+var imagesCaroussel = ["Schemas QKD.drawio.png", "Schemas QKD 1.drawio.png", "Schemas QKD 2.drawio.png", "Schemas QKD 3.drawio.png", "Schemas QKD 6.drawio.png", "Schemas QKD 7.drawio.png", "Schemas QKD 8.drawio.png"];
+var indexCaroussel = 0;
+
 $("#schema_forward").click(function() {
-    $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
+    if (indexCaroussel == 0) {
+        indexCaroussel = 6;
+    } else {
+        indexCaroussel--;
+    }
+    $("#image_caroussel").prop("src", "img/"+imagesCaroussel[indexCaroussel]);
 });
 
 $("#schema_backward").click(function() {
-    $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
+    if (indexCaroussel == 6) {
+        indexCaroussel = 0;
+    } else {
+        indexCaroussel++;
+    }
+    $("#image_caroussel").prop("src", "img/"+imagesCaroussel[indexCaroussel]);
 });

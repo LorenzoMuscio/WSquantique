@@ -273,11 +273,11 @@ i {
 /* Red Section */
 
 #r {
-  background: #20a743;
+  background: #ffe8fa;
   padding-bottom: 50px;
   padding-top: 50px;
   min-height: 700px;
-  color: white;
+  color: black;
 }
 
 #r h1 {
@@ -287,18 +287,18 @@ i {
 }
 
 #r p {
-  color: white;
+  color: black;
   font-size: 21px;
 }
 
 /* Blue Section */
 
 #b {
-  background: #19B5FE;
+  background: #c5ffcf;
   padding-bottom: 50px;
   padding-top: 50px;
   min-height: 700px;
-  color: white;
+  color: black;
 }
 
 #b h1 {
@@ -308,7 +308,26 @@ i {
 }
 
 #b p {
-  color: white;
+  color: black;
+  font-size: 21px;
+}
+
+#t {
+  background: #ffffec;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  min-height: 984px;
+  color: black;
+}
+
+#t h1 {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#t p {
+  color: black;
   font-size: 21px;
 }
 
