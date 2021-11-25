@@ -34,6 +34,14 @@ function timeQuantique(value) {
     }, 1000);
 }
 
-$(".glyphicon-chevron-down").click(function() {
+$("#chevron_presentation").click(function() {
     $("html, body").stop().animate( { scrollTop: $("#container_presentation").offset().top }, 1300);
+});
+
+$("#chevron_introduction").click(function() {
+    $("html, body").stop().animate( { scrollTop: $("#container_introduction").offset().top }, 1300);
+});
+
+$("#chevron_content").click(function() {
+    $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
 });

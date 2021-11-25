@@ -37,6 +37,12 @@ p {
   margin-top: 10px;
 }
 
+ul {
+  margin-left: 40px;
+  font-size: 21px;
+  font-weight: 100;
+}
+
 html, body {
   height: 100%;
 }
@@ -183,7 +189,7 @@ input {
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 725px;
+  min-height: 853px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -237,10 +243,10 @@ input {
   color: #bfbfbf
 }
 
-#w i {
+i {
   color: #D2527F;
   margin-left: 5px;
-  font-size: 16px;
+  font-size: 30px;
 }
 
 /* Green Section */
@@ -267,7 +273,7 @@ input {
 /* Red Section */
 
 #r {
-  background: #F62459;
+  background: #20a743;
   padding-bottom: 50px;
   padding-top: 50px;
   min-height: 700px;
