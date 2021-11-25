@@ -45,3 +45,11 @@ $("#chevron_introduction").click(function() {
 $("#chevron_content").click(function() {
     $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
 });
+
+$("#schema_forward").click(function() {
+    $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
+});
+
+$("#schema_backward").click(function() {
+    $("html, body").stop().animate( { scrollTop: $("#container_content").offset().top }, 1300);
+});
