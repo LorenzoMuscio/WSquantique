@@ -248,9 +248,9 @@ input {
 #g {
   padding-bottom: 50px;
   padding-top: 50px;
-  background: #03C9A9;
+  background: #a8ffff;
   min-height: 700px;
-  color: white;
+  color: black;
 }
 
 #g h1 {
@@ -260,8 +260,8 @@ input {
 }
 
 #g p {
-  color: white;
-  font-size: 16px;
+  color: black;
+  font-size: 21px;
 }
 
 /* Red Section */
@@ -282,7 +282,7 @@ input {
 
 #r p {
   color: white;
-  font-size: 16px;
+  font-size: 21px;
 }
 
 /* Blue Section */
@@ -303,7 +303,7 @@ input {
 
 #b p {
   color: white;
-  font-size: 16px;
+  font-size: 21px;
 }
 
 /* FOOTER Section */
